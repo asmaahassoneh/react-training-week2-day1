@@ -1,0 +1,74 @@
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.form-grid {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form-grid input {
+  padding: 8px;
+}
+
+.form-grid button {
+  padding: 10px;
+}
+
+.list {
+  display: grid;
+  gap: 10px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+}
+h1 {
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, #6b7280, #d1d5db);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+.fontGradient {
+  background: linear-gradient(135deg, #6b7280, #d1d5db);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+.empty-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 1.2rem;
+  color: #959393;
+}
