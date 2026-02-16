@@ -17,7 +17,7 @@ function Dashboard() {
   };
 
   const deleteStudent = (id) => {
-    setStudents(students.filter((s) => s.id !== id));
+    setStudents((prev) => prev.filter((s) => s.id !== id));
   };
 
   return (
