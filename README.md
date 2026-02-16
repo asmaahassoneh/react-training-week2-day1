@@ -2,7 +2,7 @@
 
 ## Features
 
-- Create Student Dashboard 
+- Create Student Dashboard
 - Combine form, student list, and details modal
 - Persist data using localStorage
 - Ensure data persists on refresh

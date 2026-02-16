@@ -26,6 +26,11 @@ function StudentForm({ setStudent }) {
       return;
     }
 
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      toast.error("Please enter a valid email address");
+      return;
+    }
     const gpaValue = parseFloat(formData.gpa);
     if (isNaN(gpaValue) || gpaValue < 0 || gpaValue > 4) {
       toast.error("GPA must be between 0 and 4");

@@ -2,8 +2,13 @@ import { useState, useEffect } from "react";
 
 function useLocalStorage(key, initialValue) {
   const [value, setValue] = useState(() => {
-    const saved = localStorage.getItem(key);
-    return saved ? JSON.parse(saved) : initialValue;
+    try {
+      const saved = localStorage.getItem(key);
+      return saved ? JSON.parse(saved) : initialValue;
+    } catch (error) {
+      console.log(error);
+      return initialValue;
+    }
   });
 
   useEffect(() => {

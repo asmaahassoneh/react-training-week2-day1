@@ -4,6 +4,8 @@ import StudentList from "../components/StudentList";
 import StudentModal from "../components/StudentModal";
 import useLocalStorage from "../hooks/useLocalStorage";
 import "../styles/styles.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Dashboard() {
   const [students, setStudents] = useLocalStorage("students", []);
@@ -36,6 +38,7 @@ function Dashboard() {
           onClose={() => setSelectedStudent(null)}
         />
       )}
+      <ToastContainer />
     </div>
   );
 }
